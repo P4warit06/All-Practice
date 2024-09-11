@@ -3,6 +3,13 @@
 // then return false 
 
 
+/*
+Write Code here 
+
+
+*/
+
+
 
 console.log(isEven(2))
 //console.log(isEven(3))
