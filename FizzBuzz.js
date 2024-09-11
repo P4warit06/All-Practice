@@ -2,11 +2,11 @@
 //  return Buzz if parameter mod 5 equal 0 
 // Otherwise  return FizzBuzz if parameter mod 15 equal 0  
  
-/*
-Write Code here 
-
-
-*/
+function FizzBuzz(number){
+    if(number%3===0) return "Fizz"
+    else if(number%5===0) return "Buzz"
+    else if(number%15===0) return "FizzBuzz"
+}
 
 console.log(FizzBuzz(3))
 console.log(FizzBuzz(5))
@@ -17,13 +17,15 @@ console.log(FizzBuzz(15))
 // to check from the previous  Function 
 // that recieve Array 
 
-/*
-Write Code here 
+function FizzBuzzArray(arr){
+    for(let i=0; i<arr.length; i++){
+        arr[i]%3 === 0 ? arr[i] = "Fizz":
+        arr[i]%5 === 0 ? arr[i] = "Buzz":
+        arr[i]%15 === 0 ? arr[i] = "FizzBuzz":null;
+    }
+    return arr
+}
 
 
-*/
-
-
-
-console.log(FizzBuzz([2,3,4,5,6,7,8,9,10.15]))
-console.log(FizzBuzz([2,3,4,5,6,7,8,9,10.15]))
+console.log(FizzBuzzArray([2,3,4,5,6,7,8,9,10.15]))
+console.log(FizzBuzzArray([2,3,4,5,6,7,8,9,10.15]))
